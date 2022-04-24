@@ -1,0 +1,225 @@
+:root{
+	--primary:#e8b80e;
+}
+html,body{
+	background: #ffffff;
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6{
+	color: #4c4c4c;
+}
+p{
+	color: #717171;
+}
+.custom-btn{
+	background: var(--primary);
+	transition: 0.5s;
+}
+.custom-btn:hover{
+	transform: scale(1.1);
+}
+.custom-btn a{
+	color: #fff;
+}
+.bg-dark {
+	background-color:var(--primary)!important;
+}
+.navbar-dark .navbar-nav .nav-link {
+	color: rgb(255 255 255);
+}
+.navbar-dark .navbar-brand h3 {
+	color: #fff;
+}
+#header{
+	background: linear-gradient(#01070ab0 , #0b0e13d9), url(../images/welcome-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 700px;
+	position: relative;
+}
+.header-content{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	color: #fff;
+}
+.header-content h1{
+	font-size: 4rem;
+	margin: 0;
+	padding: 0;
+	font-weight: 700;
+	color: var(--primary);
+}
+.header-content h5 {
+	font-size: 1.4rem;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	letter-spacing: 7px;
+}
+.header-content p{
+	color: #fff;
+}
+.header-content h5 span{
+	color: var(--primary);
+}
+.welcome-section{
+	margin: 50px 0;
+}
+.campus-imgs img{
+	transition: 0.5s;
+	box-shadow: 3px 2px 1px 3px #e8b80e;
+}
+.campus-imgs img:hover{
+	transform: scale(1.1);
+}
+.section-title{
+	margin: 65px 0;
+}
+.section-title h2{
+	position: relative;
+	display: inline-block;
+}
+.section-title h2:after{
+	position: absolute;
+	content: "";
+	left: 50%;
+	top: 51px;
+	transform: translateX(-50%);
+	width: 25%;
+	height: 4px;
+	background: var( --primary);
+}
+}
+.welcome-note p{
+	font-size: 1rem;
+}
+.image-gallery{
+	margin: 100px 0;
+	padding:5px 0 70px 0;
+	background: #f9f9f9;
+}
+.gallery-container .col-md-3{
+	margin-bottom: 33px;
+}
+.gallery-container a img{
+	transition: 0.5s;
+}
+.gallery-container a img:hover{
+	transform: scale(1.1);
+}
+.events{
+	margin: 100px 0
+}
+.event-img  img{
+	transition: 0.5s;
+	border: 2px solid #e8b80e;
+}
+.event-img img:hover{
+	transform: scale(1.1);
+}
+
+.events h3 {
+	font-size: 1.2rem;
+	margin: 15px 0;
+}
+#footer{
+	background: linear-gradient(#01070ae0 , #0b0e13d9);
+	text-align: center;
+	padding: 30px 0 0 0;
+}
+#footer ul li{
+	display: inline-block;
+	padding: 10px;
+}
+#footer ul li a{
+	color: var(--primary);
+}
+#footer .border-top{
+	border-top:1px solid #cccccc4f!important;
+}
+/*Media query for mobile view */
+@media only screen and (max-width: 576px) {
+	p{
+		font-size: 0.9rem;
+	}
+	.header-content br{
+		display: none;
+	}
+.header-content h1{
+	font-size: 2rem;
+}
+.header-content h5 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    }
+    .welcome-section{
+    	text-align: center;
+    }
+    .welcome-section .section-title {
+    display:none;
+}
+.mor-about-rvc{
+	text-align: center;
+}
+.campus-imgs img {
+    margin-bottom: 30px;
+}
+.gallery-container a img{
+	width: 100%;
+}
+.event-img img{
+	width: 100%;
+}
+.event-details{
+	text-align: center;
+	padding-bottom: 40px;
+}
+.events{
+	margin-bottom: 50px;
+}
+}
+
+/*Media query for tablet*/
+@media only screen and (max-width: 768px) {
+	p{
+		font-size: 1rem;
+	}
+	.header-content br{
+		display: none;
+	}
+.header-content h1{
+    font-size: 2.5rem;
+}
+.header-content h5 {
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    }
+    .welcome-section .section-title {
+    display:none;
+}
+.campus-imgs img {
+    margin-bottom: 30px;
+}
+.gallery-container a img{
+	width: 100%;
+}
+.event-img img{
+	width: 100%;
+}
+.event-details{
+	padding-bottom: 40px;
+}
+.events{
+	margin-bottom: 50px;
+}
+}
